@@ -1,0 +1,210 @@
+.page {
+    margin: 0 auto;
+    background-color: #F3F2F2;
+}
+
+/* 1920 */
+
+/* секция информация */
+
+.info {
+    margin: auto;
+    max-width: 1770px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    max-height: 520px;
+}
+
+.info__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 30px;
+    background-color: #8CDD94;
+}
+
+.info__logo-container {
+    display: flex;
+    border-radius: 30px 0 200px;
+    height: 156px;
+    max-width: 535px;
+    background-color: #FF8585;
+}
+
+.info__logo {
+    max-height: 46px;
+    margin: 40px 30px 70px;
+}
+
+.info__title {
+    border-radius: 400px;
+    display: flex;
+    width: 870px;
+    height: 364px;
+    background-color: #FF8585;
+}
+
+.text-container__title_xl {
+    max-width: 570px;
+    margin: auto;
+}
+
+/* нужно сделать маску затемнения для фото */
+.info__story {
+    display: flex;
+    border-radius: 30px;
+    background-image: url(../images/info__story.png);
+    background-position: center;
+    width: 870px;
+    background-repeat: no-repeat;
+}
+
+.info__description {
+    margin: auto;
+    font-family: Proto Grotesk Web Light;
+    font-weight: 300;
+    font-size: 23px;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*секция статья с фото */
+.item-article {
+    max-width: 1770px;
+    display: flex;
+    height: 630px;
+    margin: auto;
+    max-width: 1770px;
+    justify-content: center;
+}
+
+.article-where-is-going-foto_size_xl {
+    width: 1185px;   
+}
+
+.article-where-is-going-foto__img_xl {
+    max-width: 100%;
+}
+
+.description-where-is-going__container_xl {
+    flex-direction: column;
+}
+
+.description-where-is-going_size_xl {
+    width: 585px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.description-where-is-going__text_xl {
+    width: 540px;
+    height: 389px;
+    overflow: auto;
+}
+
+.description-where-is-going__subtitle_xl {
+    margin-top: 17px;
+    margin-bottom: 105px;
+}
+
+/* секция-статья */
+.develop-child {
+    margin: 30px auto;
+    max-width: 1770px;
+}
+
+.develop-child__container {
+    background-color: #C8D1FF;
+    height: 490px;
+}
+
+.main-article-quote__title_xl {
+    max-width: 845px;
+}
+
+/* секция трейлеры */
+.trailers {
+    margin: auto;
+    max-width: 1770px;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+/* секция видео */
+
+.video {
+    max-width: 1770px;
+    margin: 30px auto;
+    display: flex;
+    height: 675px;
+}
+
+.video__item-container {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.video__link{
+    margin-top: 542px;
+}
+
+/* секция рубрики */
+
+.category {
+    max-width: 1770px;
+    margin: 30px auto;
+    display: flex;
+    border: 1px solid red;
+    column-gap: 30px;
+}
+
+.category__facebook {
+    border: 1px solid red;
+    border-radius: 30px;
+}
+
+.category__descriptions {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    width: 1318px;
+}
+
+.category__description {
+    border: 1px solid red;
+    border-radius: 30px;
+    height: 189px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    background-color: #FFFFFF;
+}
+
+.category__paragraph {
+    text-align: left;
+    max-width: 770px;
+    margin-bottom: 15px;
+}
+
+.category__keyword {
+    border-radius: 15px;
+    max-width: 65px;
+    background-color: #F3F2F2;
+}
+
+/* секция статья */
+.article-quote {
+    margin: auto;
+    max-width: 1770px;
+    margin-bottom: 120px;
+}
+.item-container_size_xl {
+    max-width: 100%;
+}

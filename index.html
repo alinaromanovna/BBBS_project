@@ -1,77 +1,331 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="./pages/style.css">
     <title>BBBS</title>
 </head>
-<body> 
-    <!--Статья куда пойти-->
-    <div class="item-container item-container_size_s article-where-is-going">
-        <div class="frame"><p class="frame__text">выбор наставника</p></div>
-        <div class="text-container">
-        <h2 class="text-container__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» –<br/> для чего нужен переходный</h2>
-        <p class="text-container__subtitle">Ирина Стасенко, педагог-психолог</p>
-        </div>
-        <a href="#" class="link article-where-is-going__link" target="_blank">читать на сайте</a>    
-    </div>
-    <!--Описание куда пойти -->
-    <div class="item-container item-container_size_s description-where-is-going">
-        <div class="text-container description-where-is-going__container">
-        <p class="text-container__text description-where-is-going__text">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
-            Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>
-        <p class="text-container__subtitle description-where-is-going__subtitle">Девочка, 10 лет. Познавательный</p>
-        </div>
-    </div>
-    <!--Видео-->
-    <div class="video-item item-container_size_s">
-    <div class="video-item__video">
-        <img class="video-item__video-img" src="./images/trailer-photo.png"> <!--У меня не вышло из фигмы достать картинку без атрибутов всяких-->
 
-        <ul class="video-item__frames">
-        <li class="frame"><p class="frame__text">рубрика</p></li> 
-        <li class="frame"><p class="frame__text">рубрика</p></li> 
-        </ul>
-    </div>
-    <div class="item-container item-container_size_s video-item__description">
-        <div class="text-container video-item__description-container">
-            <h2 class="text-container__title video-item__description-title">Жутко громко и запредельно близко</h2>
-            <p class="text-container__subtitle video-item__description-subtitle">Василий Сигарев, Борисов-Мусотов (Россия), 2009 год</p>
-        </div>
-            <a href="#" class="link video-item__description-link" target="_blank">смотреть трейлер</a> 
-    </div>
-    </div>
-    <!--Книга-->
-    <div class="book-item">
-        <div class="item-container item-container_size_s book">
-            <div class="text-container book__container">
-                <h2 class="text-container__title book__title">Жизнь после утраты</h2><!--Нужна черточка еще через что лучше сделать?-->
-                <p class="text-container__subtitle book__subtitle">Волкан Вамик, Зинтл Элизабет<br/> 2011 год</p>
-            </div> 
-        </div>
-        <div class="item-container item-container_size_s book__description">
-            <p class="text-container__text book__text-container-text">Аннотация книги, статьи, фильма в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
-                Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>   
-        </div>
-    </div>
-    <!--Статья с фото-->
-    <div class="item-container item-container_size_m article-where-is-going-foto">
-        <div class="frame"><p class="frame__text">выбор наставника</p></div>
-        <div class="text-container article-where-is-going-foto__text-container">
-        <h2 class="text-container__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» – для чего нужен переходный возраст</h2>
-        <p class="text-container__subtitle">Ирина Стасенко, педагог-психолог</p>
-        </div>
-        <img class="article-where-is-going-foto__img" src="./images/where-is-going-foto.png" alt="подруги на пляже">
-        <a href="#" class="link article-where-is-going-foto__link" target="_blank">читать на сайте</a>    
-    </div>
+<body>
+    <div class="page">
+        <section class="info">
+            <div class="info__header">
+                <div class="info__logo-container">
+                    <img src="./images/logo_main-page.png" alt="логотип BBBS" class="info__logo">
+                </div>
+                <div class="info__title">
+                    <h2 class="text-container__title text-container__title_xl">Наставники.про – цифоровая информационная
+                        платформа огрганизации
+                        «Старшие Братья Старшие Сестры». Созданная для поддержки наставников программы.
+                    </h2>
+                </div>
+            </div>
+            <div class="info__story">
+                <h2 class="info__description">История Марины и Алины</h2>
+            </div>
+        </section>
+        <section class="item-article">
+            <div class="item-container article-where-is-going-foto article-where-is-going-foto_size_xl">
+                <div class="frame">
+                    <p class="frame__text">выбор наставника</p>
+                </div>
+                <div class="text-container article-where-is-going-foto__text-container">
+                    <h2 class="text-container__title">Сплав на байдарках в две строки</h2>
+                    <p class="text-container__subtitle">усадьба Архангельское в две строки</p>
+                </div>
+                <img class="article-where-is-going-foto__img article-where-is-going-foto__img_xl"
+                    src="./images/where-is-going-foto.png" alt="подруги на пляже">
+                <a href="#" class="link article-where-is-going-foto__link" target="_blank">читать на сайте</a>
+            </div>
+            <div class="item-container description-where-is-going description-where-is-going_size_xl">
+                <div
+                    class="text-container description-where-is-going__container description-where-is-going__container_xl">
+                    <p class="text-container__subtitle description-where-is-going__subtitle description-where-is-going__subtitle_xl">
+                        Девочка, 10 лет. Активный отдых</p>
+                    <p class="text-container__text description-where-is-going__text description-where-is-going__text_xl">
+                        Аннотация статьи в несколько абзацев.
+                        В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество
+                        вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и,
+                        Аннотация
+                        статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово,
+                        а задавать
+                        бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом
+                        понимать
+                        чуть лучше и,</p>
+                    <p class="text-container__text description-where-is-going__text description-where-is-going__text_xl">
+                        Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно
+                        слово,
+                        а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не по Аннотация статьи в
+                        несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать
+                        бесконечное количество вопросов, жизнь меняется.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="develop-child">
+            <div class="item-container main-article-quote develop-child__container">
+                <p class="main-article-quote__title main-article-quote__title_xl">Развитие детей-сирот отличается от
+                    развития детей, живущих в семьях.
+                    Все этапы развития у детей-сирот проходят с искажениями и имеют ряд негативных особенностей.
+                </p>
+                <a href="#" class="link main-article-quote__link" target="_blank">читать статью</a>
+            </div>
+        </section>
+        <section class="trailers">
+            <div class="video-item item-container_size_s">
+                <div class="video-item__video">
+                    <img class="video-item__video-img" src="./images/trailer-photo.png">
+                    <!--У меня не вышло из фигмы достать картинку без атрибутов всяких-->
 
-    <!--Заголовок главной статьи-->
-    <div class="item-container item-container_size_l main-article-quote">
-        <h2 class="text-container__title main-article-quote__title">У таких детей возникает ощущение отверженности. Оно приводит к напряженности и  недоверию к людям и, как итог, к реальному неприятию себя и окружающих.</h2>
-        <a href="#" class="link main-article-quote__link" target="_blank">читать на сайте</a>    
+                    <ul class="video-item__frames">
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-container item-container_size_s video-item__description">
+                    <div class="text-container video-item__description-container">
+                        <h2 class="text-container__title video-item__description-title">Жутко громко и запредельно
+                            близко</h2>
+                        <p class="text-container__subtitle video-item__description-subtitle">Василий Сигарев,
+                            Борисов-Мусотов
+                            (Россия), 2009 год</p>
+                    </div>
+                    <a href="#" class="link video-item__description-link" target="_blank">смотреть трейлер</a>
+                </div>
+            </div>
+            <div class="video-item item-container_size_s">
+                <div class="video-item__video">
+                    <img class="video-item__video-img" src="./images/trailer-photo.png">
+                    <!--У меня не вышло из фигмы достать картинку без атрибутов всяких-->
+
+                    <ul class="video-item__frames">
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-container item-container_size_s video-item__description">
+                    <div class="text-container video-item__description-container">
+                        <h2 class="text-container__title video-item__description-title">Жизнь Кабачка</h2>
+                        <p class="text-container__subtitle video-item__description-subtitle">Клод Баррас, мультфильм,
+                            Швейцария, Франция, 2016</p>
+                    </div>
+                    <a href="#" class="link video-item__description-link" target="_blank">смотреть трейлер</a>
+                </div>
+            </div>
+            <div class="video-item item-container_size_s">
+                <div class="video-item__video">
+                    <img class="video-item__video-img" src="./images/trailer-photo.png">
+                    <!--У меня не вышло из фигмы достать картинку без атрибутов всяких-->
+
+                    <ul class="video-item__frames">
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-container item-container_size_s video-item__description">
+                    <div class="text-container video-item__description-container">
+                        <h2 class="text-container__title video-item__description-title">Волчок</h2>
+                        <p class="text-container__subtitle video-item__description-subtitle">Василий Сигарев, Россия,
+                            2009 год</p>
+                    </div>
+                    <a href="#" class="link video-item__description-link" target="_blank">смотреть трейлер</a>
+                </div>
+            </div>
+            <div class="video-item item-container_size_s">
+                <div class="video-item__video">
+                    <img class="video-item__video-img" src="./images/trailer-photo.png">
+                    <!--У меня не вышло из фигмы достать картинку без атрибутов всяких-->
+
+                    <ul class="video-item__frames">
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                        <li class="frame">
+                            <p class="frame__text">рубрика</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-container item-container_size_s video-item__description">
+                    <div class="text-container video-item__description-container">
+                        <h2 class="text-container__title video-item__description-title">Жутко громко и запредельно
+                            близко</h2>
+                        <p class="text-container__subtitle video-item__description-subtitle">Василий Сигарев,
+                            Борисов-Мусотов
+                            (Россия), 2009 год</p>
+                    </div>
+                    <a href="#" class="link video-item__description-link" target="_blank">смотреть трейлер</a>
+                </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="item-container article-where-is-going-foto video__item-container">
+                <h2 class="text-container__title">Эфир с выпускником нашей программы</h2>
+                <p class="text-container__subtitle">Иван Рустаев, выпускник программы</p>
+                <a href="" class="link article-where-is-going-foto__link video__link" target="_blank">смотреть видео</a>
+            </div>
+            <img src="./images/video-image.png" alt="Фото из видео Выпускники #BBBS"
+                class="item-container video__graduate">
+
+        </section>
+        <section class="categories">
+            <article class="category">
+                <iframe class="category__facebook"
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fru-ru.facebook.com%2FBigBrothers.BigSisters.Russia&tabs=timeline&width=420&height=627&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                    width="420" height="627" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+                <div class="category__descriptions">
+                    <div class="category__description">
+                        <p class="category__paragraph text-container__title">Я боюсь, что ребёнок ко мне слишком сильно
+                            привяжется. Что делать?</p>
+                        <p class="category__keyword frame__text">рубрика</p>
+                    </div>
+                    <div class="category__description">
+                        <p class="category__paragraph text-container__title">Возможно ли продлить срок участия в
+                            программе, если и я и мой «младший» хотим остаться в программе?</p>
+                        <p class="category__keyword frame__text">рубрика</p>
+                    </div>
+                    <div class="category__description">
+                        <p class="category__paragraph text-container__title">Что делать если Ваш младший решил закрыть
+                            пару, т.к. слишком занят с учебой и друзьями?</p>
+                        <p class="category__keyword frame__text">рубрика</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="article-quote">
+            <div class="item-container item-container_size_l item-container_size_xl main-article-quote">
+                <h2 class="text-container__title main-article-quote__title">У таких детей возникает ощущение
+                    отверженности.
+                    Оно
+                    приводит к напряженности и недоверию к людям и, как итог, к реальному неприятию себя и окружающих.
+                </h2>
+                <a href="#" class="link main-article-quote__link" target="_blank">читать на сайте</a>
+            </div>
+        </section>
+        <!--Статья куда пойти-->
+
+        <div class="item-container item-container_size_s article-where-is-going">
+            <div class="frame">
+                <p class="frame__text">выбор наставника</p>
+            </div>
+            <div class="text-container">
+                <h2 class="text-container__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» –<br /> для чего
+                    нужен переходный</h2>
+                <p class="text-container__subtitle">Ирина Стасенко, педагог-психолог</p>
+            </div>
+            <a href="#" class="link article-where-is-going__link" target="_blank">читать на сайте</a>
+        </div>
+        <!--Описание куда пойти -->
+        <div class="item-container item-container_size_s description-where-is-going">
+            <div class="text-container description-where-is-going__container">
+                <p class="text-container__text description-where-is-going__text">Аннотация книги в несколько абзацев.
+                    В тот
+                    момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов,
+                    жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов,
+                    научитесь
+                    даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное
+                    количество вопросов, жизнь меняется.
+                    Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как
+                    ребёнок
+                    научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.
+                    Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже
+                    шутить.
+                    Аннотация статьи в несколько абзацев. </p>
+                <p class="text-container__subtitle description-where-is-going__subtitle">Девочка, 10 лет. Познавательный
+                </p>
+            </div>
+        </div>
+        <!--Видео-->
+        <div class="video-item item-container_size_s">
+            <div class="video-item__video">
+                <img class="video-item__video-img" src="./images/trailer-photo.png">
+                <!--У меня не вышло из фигмы достать картинку без атрибутов всяких-->
+
+                <ul class="video-item__frames">
+                    <li class="frame">
+                        <p class="frame__text">рубрика</p>
+                    </li>
+                    <li class="frame">
+                        <p class="frame__text">рубрика</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-container item-container_size_s video-item__description">
+                <div class="text-container video-item__description-container">
+                    <h2 class="text-container__title video-item__description-title">Жутко громко и запредельно близко
+                    </h2>
+                    <p class="text-container__subtitle video-item__description-subtitle">Василий Сигарев,
+                        Борисов-Мусотов
+                        (Россия), 2009 год</p>
+                </div>
+                <a href="#" class="link video-item__description-link" target="_blank">смотреть трейлер</a>
+            </div>
+        </div>
+        <!--Книга-->
+        <div class="book-item">
+            <div class="item-container item-container_size_s book">
+                <div class="text-container book__container">
+                    <h2 class="text-container__title book__title">Жизнь после утраты</h2>
+                    <!--Нужна черточка еще через что лучше сделать?-->
+                    <p class="text-container__subtitle book__subtitle">Волкан Вамик, Зинтл Элизабет<br /> 2011 год</p>
+                </div>
+            </div>
+            <div class="item-container item-container_size_s book__description">
+                <p class="text-container__text book__text-container-text">Аннотация книги, статьи, фильма в несколько
+                    абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное
+                    количество
+                    вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце
+                    концов,
+                    научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать
+                    бесконечное количество вопросов, жизнь меняется.
+                    Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как
+                    ребёнок
+                    научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется.
+                    Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже
+                    шутить.
+                    Аннотация статьи в несколько абзацев. </p>
+            </div>
+        </div>
+        <!--Статья с фото-->
+        <div class="item-container item-container_size_m article-where-is-going-foto">
+            <div class="frame">
+                <p class="frame__text">выбор наставника</p>
+            </div>
+            <div class="text-container article-where-is-going-foto__text-container">
+                <h2 class="text-container__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» – для чего нужен
+                    переходный возраст</h2>
+                <p class="text-container__subtitle">Ирина Стасенко, педагог-психолог</p>
+            </div>
+            <img class="article-where-is-going-foto__img" src="./images/where-is-going-foto.png" alt="подруги на пляже">
+            <a href="#" class="link article-where-is-going-foto__link" target="_blank">читать на сайте</a>
+        </div>
+
+        <!--Заголовок главной статьи-->
+        <div class="item-container item-container_size_l main-article-quote">
+            <h2 class="text-container__title main-article-quote__title">У таких детей возникает ощущение отверженности.
+                Оно
+                приводит к напряженности и недоверию к людям и, как итог, к реальному неприятию себя и окружающих.</h2>
+            <a href="#" class="link main-article-quote__link" target="_blank">читать на сайте</a>
+        </div>
     </div>
-    
 </body>
+
 </html>
