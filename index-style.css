@@ -301,11 +301,19 @@ color: #464646;
     width: 20px;
 
 }  */
+
+.book__border{
+    border-top: 1px solid #000;
+    margin: auto auto 20px;
+    width: 66px;
+}
+
 .book__subtitle {
     height: 57px;
     color: #000000;
     margin: 0 20px; /*по макету вроде нужно, но лучше уточнить */
     width: auto;
+    
 }
 @media screen and (max-width: 720px) {
     .book__subtitle {
