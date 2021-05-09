@@ -3,15 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./pages/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index-style.css">
     <title>BBBS</title>
 </head>
-<<<<<<< HEAD
 
 <body class="page">
+
+    <!--Шапка -->
+
     <header class="header">
+        <div class="header__wraper">
+          <h3 class="header__title">наставники.про</h3>
+          <ul class="header__menu-links">
+            <li><a class="header__menu-link" href="#" target="_self">Календарь</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">куда пойти</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">вопросы</a></li>
+            <li><a class="header__menu-link header__menu-link_hover" href="#" target="_self">читать и смотреть</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">права детей</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">Истории</a></li>
+          </ul>
+          <div class="header__box-menu">
+              <a><img class="header__menu-search" src="./images/menu-search-sign.svg"></a>
+              <img class="header__menu-line" src="./images/menu-line-sign.svg">
+              <a><img class="header__menu-profile" src="./images/menu-profile-sign.svg"></a>
+          </div>
+        </div>
+      </header>
+      <!-- Заголовок и рубрикатор-->
+      <main class="frame-container">
+          <h1 class="frame-container__title">Календарь</h1>
+          <!-- <div class="frame-container__button"> Если несколько строчек рубрик используем -->
+          <ul class="frame-container__buttons-list">
+              <li><button class="frame-container__button frame-container__button_type_active">Декабрь</button></li>
+              <li><button class="frame-container__button">Январь</button></li>
+          </ul>
+          <!-- <ul>
+              <li></li>
+          </ul> -->
+          </div>
+
+      </main>
+
+      
+    <!-- <header class="header">
         <h3 class="header__title">наставники.про</h3>
         <ul class="header__menu-links">
           <li><a class="header__menu-link" href="#" target="_self">Календарь</a></li>
@@ -86,11 +121,8 @@
 
           </div>
       </div>
-    </main>
+    </main> -->
       
-      <footer class="footer">
-=======
-<body> 
     <!--Статья куда пойти-->
     <div class="item-container item-container_size_s article-where-is-going">
         <div class="frame"><p class="frame__text">выбор наставника</p></div>
@@ -155,15 +187,16 @@
         <h2 class="text-container__title main-article-quote__title">У таких детей возникает ощущение отверженности. Оно приводит к напряженности и  недоверию к людям и, как итог, к реальному неприятию себя и окружающих.</h2>
         <a href="#" class="link main-article-quote__link" target="_blank">читать на сайте</a>    
     </div>
->>>>>>> 69d61a98a7b8b3af51bdcaac82908723526e2346
-    
-          <div class="footer__wraper">
-              <div class="footer__wraper_type_logo">
-                  <img class="footer__logo-img" src="./images/logo_bbbs.svg">
+
+      <footer class="footer">
+        <div class="footer__wraper">
+          <div class="footer__element">
+              <div class="footer__wraper-logo">
+                  <img class="footer__logo-img" src="../../images/logo_bbbs.svg">
                   <button class="button footer__button-help">Помочь деньгами</button>
               </div>
               <p class="footer__copyright">&copy; Старшие Братья Старшие Сестры</p>
-              <div class="footer__copyright_type_by">
+              <div class="footer__copyright-by">
                   <p class="footer__text">Разработка – студенты <span class="footer__text_type_span">Яндекс.Практикум</span></p>
                   <p class="footer__text">Концепия и дизайн – <span class="footer__text_type_span">krkr.design</span></p>
               </div>
@@ -209,6 +242,7 @@
               </li>
             </ul>
           </nav>
+        </div>
       </footer>
 </body>
 
