@@ -312,16 +312,14 @@ color: #464646;
 
 }  */
 
-.book__border{
-    border-top: 1px solid #000;
-    margin: auto auto 20px;
-    width: 66px;
-}
+
 
 .book__subtitle {
     height: 57px;
     color: #000000;
     margin: 0 20px; /*по макету вроде нужно, но лучше уточнить */
+    border-top: 1px solid #000;
+    padding-top: 20px;
     width: auto;
 
 }
