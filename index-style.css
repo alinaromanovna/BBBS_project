@@ -1,3 +1,204 @@
+/* Хедер */
+.header {
+    background-color: #F3F2F2;
+    
+}
+
+.header__wraper {
+    align-items: center;
+    padding-top: 39px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1745px;
+    height: 28px;
+}
+
+@media screen and (max-width: 1919px) {
+    .header__wraper {
+    max-width: 1170px;
+      padding-right: 130px;
+      padding-left: 130px;
+    }
+  }
+  
+  @media screen and (max-width: 1439px) {
+    .header__wraper {
+      padding-right: 117px;
+      padding-left: 117px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .header__wraper {
+      max-width: 288px;
+      padding-top: 16px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+
+
+.header__box-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__box-menu {
+      display: none;
+    }
+  }
+
+.header__menu-line {
+    margin: 0 15px;
+}
+
+.header__menu-link {
+    margin-right: 30px;
+    text-decoration: none;
+    float: left;
+    font-family: Proto Grotesk Web Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header__menu-link_hover:hover {
+    color: #224CFF;
+    transition: 0.1s linear;
+}
+
+.header__menu-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin-right: 83px;
+    float: left;  
+}
+
+@media screen and (max-width: 1024px) {
+    .header__menu-links {
+      display: none;
+    }
+  }
+
+.header__menu-profile {
+    width: 30px;
+    height: 30px;
+}
+
+.header__menu-search {
+    width: 30px;
+    height: 30px;
+}
+
+.header__title {
+    font-family: Proto Grotesk Web Light;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #224CFF;
+    padding: 0;
+    margin: 0;
+    margin-right: 72px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__title {
+    margin: 0 auto;
+    font-size: 17.5px;
+    line-height: 17px;
+    }
+  }
+
+.header__title:hover {
+    color: #2E2468;
+    transition: 0.1s linear;
+}
+
+
+/* Фрайм контейнер с рубриками */
+.frame-container {
+    background: #F3F2F2;
+}
+
+.frame-container__title {
+    font-family: Proto Grotesk Web Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 74px;
+    line-height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .frame-container__title {
+      font-size: 37px;
+      line-height: 39px;
+    }
+  }
+.frame-container__buttons {
+    
+}
+.frame-container__buttons-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+
+}
+
+.frame-container__button {
+    background-color: #F3F2F2;
+    font-family: Proto Grotesk Web Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    width: 104px;
+    height: 48px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+    color: #000000;
+    cursor: pointer;
+    padding: 0;
+   
+}
+
+.frame-container__button_type_active {
+    background-color: #000000;
+    
+    color: #F3F2F2;
+   
+
+}
+
+
+
+
 
 /* Статья куда пойти */
 .item-container {
@@ -438,5 +639,164 @@ color: #464646;
     }
     
 }
+
+/* Футер */
+
+.footer {
+    background-color: #2E2468;
+    margin-top: 120px;
+    
+}
+
+.footer__wraper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    max-width: 1000px;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer__wraper {
+        display: none;
+    }
+  }
+
+
+.footer__element {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.footer__wraper-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer__text {
+    font-family: PT Root UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #F3F2F2;
+    margin-right: 30px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.footer__text:last-of-type {
+    margin-right: 0;
+}
+
+
+.footer__text_type_span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+    
+.footer__text_type_span:hover {
+    color: #224CFF;
+    transition: 0.1s linear;
+}
+
+.footer__logo-link {
+    display: flex;
+    max-height: 76px;
+    max-width: 415px;
+    margin: 0;
+}
+
+.footer__logo-img {
+    height: 76px;
+    width: 415px;
+    padding: 0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-right: 85px;
+    border: none;
+}
+
+.footer__list-item{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer__list-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer__links{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__link {
+    font-family: Proto Grotesk Web Light;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #F3F2F2;
+    flex: none;
+    align-self: stretch;
+    cursor: pointer;
+}
+
+.footer__link:hover{
+    color: #224CFF;
+    transition: 0.1s linear;
+}
+
+.footer__copyright {
+    font-family: PT Root UI;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #C8D1FF;
+    margin-top: 124.08px;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.footer__copyright-by {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__button-help {
+    background-color: transparent;
+    font-family: Proto Grotesk Web Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    width: 140px;
+    height: 48px;
+    border: 1px solid #F3F2F2;
+    box-sizing: border-box;
+    border-radius: 100px;
+    color: #F3F2F2;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 
 
