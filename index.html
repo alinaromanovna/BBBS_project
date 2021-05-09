@@ -3,10 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./pages/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBBS</title>
 </head>
-<body>
+
+<body class="page">
+    <header class="header">
+        <h3 class="header__title">наставники.про</h3>
+        <ul class="header__menu-links">
+          <li><a class="header__menu-link" href="#" target="_self">Календарь</a></li>
+          <li><a class="header__menu-link" href="#" target="_self">куда пойти</a></li>
+          <li><a class="header__menu-link" href="#" target="_self">вопросы</a></li>
+          <li><a class="header__menu-link header__menu-link_hover" href="#" target="_self">читать и смотреть</a></li>
+          <li><a class="header__menu-link" href="#" target="_self">права детей</a></li>
+          <li><a class="header__menu-link" href="#" target="_self">Истории</a></li>
+        </ul>
+        <div class="header__box-menu">
+            <a><img class="header__menu-search" src="./images/menu-search-sign.svg"></a>
+            <img class="header__menu-line" src="./images/menu-line-sign.svg">
+            <a><img class="header__menu-profile" src="./images/menu-profile-sign.svg"></a>
+        </div>
+    </header>
+
+    <main>
+      <div class="menu">
+          <div class="place menu__columns">
+            <p class="place menu__numbers">1235</p>
+            <p class="place menu__h1">Заголовок h1</p>
+            <p class="place menu__h3">Заголовок h3</p>
+            <p class="place menu__h2">Заголовок h2</p>
+            <p class="place menu__text">Настоящие дружеские отношения строятся на взаимном интересе, 
+              доверии и привязанности. Когда наставник для ребенка становится именно другом, 
+              а не просто знакомым или волонтером, то подопечный начинает быть искренне заинтересован в общении, 
+              начинает ждать встреч, звонить по телефону.</p>
+            <p class="place menu__clickable-element">Кликабельные элементы</p>
+            <p class="place menu__signature">Подпись</p>
+              <div class="place menu__sign">
+              <p class="place menu__arrow-sign"><img class="" src="./images/arrow-sign.svg"></p>
+              <p class="place menu__close-sign"><img class="" src="./images/close-sign.svg"></p>
+              </div>
+            <p class="place menu__clickable-text">Cправочник</p>
+            <p class="place menu__clickable-text_type_small">рубрика</p>
+            <p class="place menu__clickable-headers">Кликабельные заголовки,название мероприятий</p>
+          </div>
+
+          <div class="place menu__columns">
+            <p class="place menu__numbers_type_mobile">1235</p>
+            <p class="place menu__h1_type_mobile">Заголовок h1 моб</p>
+            <p class="place menu__h2_type_mobile">Заголовок h2 моб</p>
+            <p class="place menu__text_type_mobile">Настоящие дружеские отношения строятся на взаимном интересе, 
+              доверии и привязанности. Когда наставник для ребенка становится именно другом, 
+              а не просто знакомым или волонтером, то подопечный начинает быть искренне заинтересован в общении, 
+              начинает ждать встреч, звонить по телефону.</p>
+            <p class="place menu__clickable-element_type_mobile">Кликабельные элементы</p>
+            <p class="place menu__signature_type_mobile">Подпись</p>
+          </div>
+
+          <div class="smile">
+            <div class="smile__group-one"></div>
+            <img class="smile__img" src="./images/smiles/smile.svg">
+            <img class="smile__img" src="images/smiles/OK.svg">
+            <img class="smile__img" src="./images/smiles/Sad.svg">
+            <p class="smile__text smile__text_type_colour-basic">Оцените проведенное время</p>
+            <div class="smile__group-two"></div>
+            <img class="smile__img" src="images/smiles/smile-clicked-green.svg">
+            <img class="smile__img" src="./images/smiles/OK.svg">
+            <img class="smile__img" src="./images/smiles/Sad.svg">
+            <p class="smile__text smile__text_type_colour-green">Было классно!</p>
+            <div class="smile__group-three"></div>
+            <img class="smile__img" src="./images/smiles/smile.svg">
+            <img class="smile__img" src="./images/smiles/OK-clicked-gray.svg">
+            <img class="smile__img" src="./images/smiles/Sad.svg">
+            <p class="smile__text smile__text_type_colour-gray">Нормально</p>
+            <div class="smile__group-four"></div>
+            <img class="smile__img" src="./images/smiles/smile.svg">
+            <img class="smile__img" src="./images/smiles/OK.svg">
+            <img class="smile__img" src="./images/smiles/sad-clicked-red.svg">
+            <p class="smile__text smile__text_type_colour-red">Что-пошло не так</p>
+
+          </div>
+      </div>
+    </main>
+      
+      <footer class="footer">
     
+          <div class="footer__wraper">
+              <div class="footer__wraper_type_logo">
+                  <img class="footer__logo-img" src="./images/logo_bbbs.svg">
+                  <button class="button footer__button-help">Помочь деньгами</button>
+              </div>
+              <p class="footer__copyright">&copy; Старшие Братья Старшие Сестры</p>
+              <div class="footer__copyright_type_by">
+                  <p class="footer__text">Разработка – студенты <span class="footer__text_type_span">Яндекс.Практикум</span></p>
+                  <p class="footer__text">Концепия и дизайн – <span class="footer__text_type_span">krkr.design</span></p>
+              </div>
+          </div>
+          <nav>
+            <ul class="footer__links">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">о проекте</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">Календарь</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">куда пойти</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">вопросы</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Расписание">читать и смотреть</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Календарь">права детей</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Путешествия">Истории</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="footer__links">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Расписание">VKontakte</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Календарь">Instagram</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Путешествия">Уoutube</a>
+              </li>
+            </ul>
+          </nav>
+      </footer>
 </body>
+
 </html>
