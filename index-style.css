@@ -176,6 +176,16 @@ color: #464646;
  /* Нужно подвинуть скролл  */
 }
 
+::-webkit-scrollbar-thumb { /* стилизовал скролл, но передвинуть пока не получается, возможно для этого нужен будет js */
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#E8E6E6;
+}
+  
+::-webkit-scrollbar{
+    width: 5px;
+}
+
 @media screen and (max-width: 720px) {
     .text-container__text {
         
@@ -313,7 +323,7 @@ color: #464646;
     color: #000000;
     margin: 0 20px; /*по макету вроде нужно, но лучше уточнить */
     width: auto;
-    
+
 }
 @media screen and (max-width: 720px) {
     .book__subtitle {
