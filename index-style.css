@@ -1,3 +1,15 @@
+.page__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 80px;
+}
+.main-conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 80px;
+}
 /* Хедер */
 .header {
     background-color: #F3F2F2;
@@ -157,7 +169,11 @@
     }
   }
 .frame-container__buttons {
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 15px;
+    margin-top: 40px;
 }
 .frame-container__buttons-list {
     display: flex;
@@ -165,7 +181,8 @@
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin-top: 40px;
+    margin: 0;
+    
 
 }
 
@@ -221,13 +238,13 @@
 }
 
 
-.article-where-is-going {
+.article {
     background-color: #8CDD94;
     padding: 15px 30px;    
 }
 
 @media screen and (max-width: 720px) {
-    .article-where-is-going {
+    .article {
         background-color: #C8D1FF;
         padding: 15px;    
     }
@@ -239,21 +256,27 @@
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
-    border: 1px solid red;
 }
 
 .frame__text {
-font-family: PT Root UI;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 13px;
-text-align: center;
-letter-spacing: 1px;
-text-transform: uppercase;
-margin: 0;
-color: #464646;
+    font-family: PT Root UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #464646;
 } 
+
+.frame__choice {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
 
 .text-container {
     max-width: 100%;
@@ -342,21 +365,39 @@ color: #464646;
     
 }
 
+.card {
+    height: 224px;
+}
+
+.card_color_green {
+    background-color: #8CDD94;
+}
+
+.card_color_yellow {
+    background-color: #F8D162;
+}
+
+.card_color_pink {
+    background-color: #FF8585;
+}
+.card_color_blue {
+    background-color: #C8D1FF;;
+}
 /* Описание куда пойти */
 
-.description-where-is-going {
+.description {
     background-color: #FFFFFF;
     padding: 30px;
-    border: 1px solid red;
+    
 }
 @media screen and (max-width: 720px) {
-    .description-where-is-going {
+    .description {
         padding: 15px;
 
     }
 }
 
-.description-where-is-going__container {
+.description__container {
     flex-direction: column-reverse;
     justify-content: flex-start;
     margin: 0;
@@ -396,13 +437,13 @@ color: #464646;
     }
 }
 
-.description-where-is-going__subtitle {
+.description__subtitle {
     text-align: left;
     margin-bottom: 10px;
 }
 
 @media screen and (max-width: 720px) {
-    .description-where-is-going__subtitle {
+    .description__subtitle {
         margin-bottom: 5px;
     }
 }
@@ -550,13 +591,15 @@ color: #464646;
 }
 
 .article-where-is-going-foto {
-    padding: 15px 30px 30px 30px;
+    padding: 0px 30px 30px 30px;
     background: #F8D162;
+    position: relative;
 }
 
 @media screen and (max-width: 720px) {
     .article-where-is-going-foto {
         padding: 15px;
+        
     }
 }
 
@@ -575,8 +618,7 @@ color: #464646;
     border-radius: 15px;
     margin-bottom: 15px;
     object-fit: cover;
-    max-width: 810px;
-    max-height: 394px;  
+    width: 100%; 
 
 }
 
@@ -641,162 +683,4 @@ color: #464646;
 }
 
 /* Футер */
-
-.footer {
-    background-color: #2E2468;
-    margin-top: 120px;
-    
-}
-
-.footer__wraper {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding-top: 90px;
-    padding-bottom: 80px;
-    max-width: 1000px;
-}
-
-@media screen and (max-width: 1024px) {
-    .footer__wraper {
-        display: none;
-    }
-  }
-
-
-.footer__element {
-    display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-}
-
-.footer__wraper-logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.footer__text {
-    font-family: PT Root UI;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-    color: #F3F2F2;
-    margin-right: 30px;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
-.footer__text:last-of-type {
-    margin-right: 0;
-}
-
-
-.footer__text_type_span {
-    text-decoration: underline;
-    cursor: pointer;
-}
-    
-.footer__text_type_span:hover {
-    color: #224CFF;
-    transition: 0.1s linear;
-}
-
-.footer__logo-link {
-    display: flex;
-    max-height: 76px;
-    max-width: 415px;
-    margin: 0;
-}
-
-.footer__logo-img {
-    height: 76px;
-    width: 415px;
-    padding: 0;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    margin-right: 85px;
-    border: none;
-}
-
-.footer__list-item{
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.footer__list-item:last-of-type {
-    margin-bottom: 0;
-}
-
-.footer__links{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.footer__link {
-    font-family: Proto Grotesk Web Light;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    color: #F3F2F2;
-    flex: none;
-    align-self: stretch;
-    cursor: pointer;
-}
-
-.footer__link:hover{
-    color: #224CFF;
-    transition: 0.1s linear;
-}
-
-.footer__copyright {
-    font-family: PT Root UI;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: #C8D1FF;
-    margin-top: 124.08px;
-    margin-bottom: 12px;
-    padding: 0;
-}
-
-.footer__copyright-by {
-    display: flex;
-    flex-direction: row;
-}
-
-.footer__button-help {
-    background-color: transparent;
-    font-family: Proto Grotesk Web Light;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 19px;
-    letter-spacing: 0.2px;
-    width: 140px;
-    height: 48px;
-    border: 1px solid #F3F2F2;
-    box-sizing: border-box;
-    border-radius: 100px;
-    color: #F3F2F2;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-}
-
-
-
-
 
