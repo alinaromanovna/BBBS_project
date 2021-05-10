@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../../index-style.css">
-    <link rel="stylesheet" href="../where-is-going/where-is-going.css"> -->
+    <link rel="stylesheet" href="../../index-style.css">
+    <link rel="stylesheet" href="../where-is-going/where-is-going.css">
     <link rel="stylesheet" href="./articles.css">
     <title>articles</title>
 </head>
@@ -30,7 +30,7 @@
           
       </header>
 
-      <!--<main class="main-conteiner">
+      <main class="main-conteiner">
           <section>
             <div class="frame-container articles">
                 <h1 class="frame-container__title">Статьи</h1>
@@ -40,7 +40,7 @@
             <div class ="article-where-is-going-container">
               <article class="article-foto">
                 <div class="item-container article-where-is-going-foto article-foto__container">
-                    <div class="frame"><p class="frame__text">выбор наставника</p></div>
+                    <div class="frame frame__choice"><p class="frame__text">выбор наставника</p></div>
                     <div class="text-container article-where-is-going-foto__text-container article-foto__text-container">
                     <h2 class="text-container__title">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» – для чего нужен переходный возраст</h2>
                     <p class="text-container__subtitle">Симбиоз со знаком «плюс» и симбиоз со знаком «минус» – для чего нужен переходный возраст</p>
@@ -52,7 +52,7 @@
               <article class="article-description">
                 <div class="item-container description-where-is-going article-description__container">
                     <p class=" description-where-is-going__subtitle article-description__subtitle">Девочка, 10 лет. Познавательный</p>
-                    <div class="text-container description-where-is-going__container article-description__text-container"> <!-- Не понятно нужен ли скролл для двух описаний или это одно описание
+                    <div class="text-container description-where-is-going__container article-description__text-container"> Не понятно нужен ли скролл для двух описаний или это одно описание
                     <p class="text-container__text description-where-is-going__text article-description__text">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
                         Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>
                     <p class="text-container__text description-where-is-going__text article-description__text">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
@@ -268,20 +268,23 @@
     </main>
 
       <footer class="footer">
+        <img class="footer__logo-img" src="../../images/logo_bbbs.svg">
         <div class="footer__wraper">
-          <div class="footer__element">
-              <div class="footer__wraper-logo">
-                  <img class="footer__logo-img" src="../../images/logo_bbbs.svg">
+            <div class="footer__element">
+              <div class="footer__wraper-container">
                   <button class="button footer__button-help">Помочь деньгами</button>
               </div>
-              <p class="footer__copyright">&copy; Старшие Братья Старшие Сестры</p>
-              <div class="footer__copyright-by">
-                  <p class="footer__text">Разработка – студенты <span class="footer__text_type_span">Яндекс.Практикум</span></p>
-                  <p class="footer__text">Концепия и дизайн – <span class="footer__text_type_span">krkr.design</span></p>
+              <div class=" footer__copyright-container">
+                    <p class="footer__copyright">&copy; Старшие Братья Старшие Сестры</p>
+                    <div class="footer__copyright-by">
+                        <p class="footer__text">Разработка – студенты <span class="footer__text_type_span">Яндекс.Практикум</span></p>
+                        <p class="footer__text">Концепия и дизайн – <span class="footer__text_type_span">krkr.design</span></p>
+                    </div>
+                </div>
               </div>
-          </div>
-          <nav>
-            <ul class="footer__links">
+          
+          <nav class="footer-menu">
+            <ul class="footer__links footer-menu__links">
               <li class="footer__list-item">
                 <a class="footer__link" href="#" target="_blank" title="Погода">о проекте</a>
               </li>
@@ -305,8 +308,8 @@
               </li>
             </ul>
           </nav>
-          <nav>
-            <ul class="footer__links">
+          <nav class="footer-social">
+            <ul class="footer__links footer-social__links">
               <li class="footer__list-item">
                 <a class="footer__link" href="#" target="_blank" title="Погода">Facebook</a>
               </li>
