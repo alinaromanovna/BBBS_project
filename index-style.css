@@ -238,13 +238,13 @@
 }
 
 
-.article-where-is-going {
+.article {
     background-color: #8CDD94;
     padding: 15px 30px;    
 }
 
 @media screen and (max-width: 720px) {
-    .article-where-is-going {
+    .article {
         background-color: #C8D1FF;
         padding: 15px;    
     }
@@ -256,7 +256,6 @@
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
-    border: 1px solid red;
 }
 
 .frame__text {
@@ -275,7 +274,8 @@
 .frame__choice {
     position: absolute;
     top: 15px;
-    left: 220px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .text-container {
@@ -385,19 +385,19 @@
 }
 /* Описание куда пойти */
 
-.description-where-is-going {
+.description {
     background-color: #FFFFFF;
     padding: 30px;
-    border: 1px solid red;
+    
 }
 @media screen and (max-width: 720px) {
-    .description-where-is-going {
+    .description {
         padding: 15px;
 
     }
 }
 
-.description-where-is-going__container {
+.description__container {
     flex-direction: column-reverse;
     justify-content: flex-start;
     margin: 0;
@@ -437,13 +437,13 @@
     }
 }
 
-.description-where-is-going__subtitle {
+.description__subtitle {
     text-align: left;
     margin-bottom: 10px;
 }
 
 @media screen and (max-width: 720px) {
-    .description-where-is-going__subtitle {
+    .description__subtitle {
         margin-bottom: 5px;
     }
 }
@@ -591,13 +591,15 @@
 }
 
 .article-where-is-going-foto {
-    padding: 15px 30px 30px 30px;
+    padding: 0px 30px 30px 30px;
     background: #F8D162;
+    position: relative;
 }
 
 @media screen and (max-width: 720px) {
     .article-where-is-going-foto {
         padding: 15px;
+        
     }
 }
 

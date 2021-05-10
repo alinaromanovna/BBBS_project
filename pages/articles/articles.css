@@ -5,3 +5,143 @@
 .articles-place__list {
     row-gap: 80px;
 }
+
+.header {
+    background-color: #F3F2F2;
+    display: flex;
+    padding: 40px 75px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.header__menu-link {
+    text-decoration: none;
+    font-family: Proto Grotesk Web Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header__menu-link_hover:hover {
+    color: #224CFF;
+    transition: 0.1s linear;
+}
+
+.header__menu-links {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    cursor: pointer;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__menu-links {
+        display: none;
+    }
+}
+
+.header__menu-profile {
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+}
+
+.header__link-profile {
+    width: 30px;
+    height: 30px;
+}
+
+.header__link-burge_type_hide {
+    width: 30px;
+    height: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .header__link-burge_type_hide {
+        display: block;
+        order: 3;
+    }
+
+}
+
+
+.header__menu-search {
+    width: 20px;
+    height: 20px;
+    border-right: 0.7px solid #A7A6A6;
+    margin: auto;
+    padding-right: 20px;
+
+}
+
+
+.header__link-search {
+    width: 30px;
+    height: 30px;
+}
+
+
+.header__order {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .header__menu-link_type_hide {
+        display: none;
+    }
+
+    .header__order {
+        padding: 0;
+    }
+
+    .header__menu-search {
+      border: none;
+    }
+
+   
+  }
+
+  .header__menu-title {
+    font-family: Proto Grotesk Web Light;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #224CFF;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;    
+}
+
+@media screen and (max-width: 1024px) {
+
+    .header__menu-title {
+        order: 2;
+    }
+}
+
+.header__title:hover {
+    color: #2E2468;
+    transition: 0.1s linear;
+}
