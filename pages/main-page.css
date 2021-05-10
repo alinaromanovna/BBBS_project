@@ -14,12 +14,26 @@
     max-height: 520px;
 }
 
+@media screen and (max-width: 1441px) {
+    .info {
+        max-width: 1170px;
+        max-height: 414px;
+        column-gap: 30px;
+    }
+}
+
 .info__header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 30px;
     background-color: #8CDD94;
+}
+
+@media screen and (max-width: 1441px) {
+    .info__header, .info__story {
+        width: 570px;
+    }
 }
 
 .info__logo-container {
@@ -30,9 +44,23 @@
     background-color: #FF8585;
 }
 
+@media screen and (max-width: 1441px) {
+    .info__logo-container {
+        height: 124px;
+        max-width: 395px;
+        display: grid;
+    }
+}
+
 .info__logo {
     max-height: 46px;
     margin: 40px 30px 70px;
+}
+
+@media screen and (max-width: 1441px) {
+    .info__logo {
+        margin: 35px 30px 43px;
+    }
 }
 
 .info__title {
@@ -41,6 +69,13 @@
     width: 870px;
     height: 364px;
     background-color: #FF8585;
+}
+
+@media screen and (max-width: 1441px) {
+    .info__title {
+        height: 290px;
+        max-width: 570px;
+    }
 }
 
 .text-container__title_xl {
@@ -69,6 +104,12 @@
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 1441px) {
+    .info__description {
+        visibility: hidden;
+    }
+}
+
 /*секция статья с фото */
 .item-article {
     max-width: 1770px;
@@ -78,12 +119,24 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 1441px) {
+    .item-article {
+        max-width: 1170px;
+    }
+}
+
 .article-where-is-going-foto_size_xl {
     width: 1185px;   
 }
 
 .article-where-is-going-foto__img_xl {
     max-width: 100%;
+}
+
+@media screen and (max-width: 1441px) {
+    .article-where-is-going-foto__img_xl {
+        height: 394px;
+    }
 }
 
 .description-where-is-going__container_xl {
@@ -98,8 +151,9 @@
 
 .description-where-is-going__text_xl {
     width: 540px;
-    height: 389px;
+    height: 195px;
     overflow: auto;
+    margin-bottom: 20px;
 }
 
 .description-where-is-going__subtitle_xl {
@@ -111,6 +165,12 @@
 .develop-child {
     margin: 30px auto;
     max-width: 1770px;
+}
+
+@media screen and (max-width: 1441px) {
+    .develop-child {
+        max-width: 1170px;
+    }
 }
 
 .develop-child__container {
@@ -125,10 +185,27 @@
 /* секция трейлеры */
 .trailers {
     margin: auto;
-    max-width: 1770px;
+}
+
+.trailers__list {
+    list-style: none;
     display: flex;
-    justify-content: center;
     column-gap: 30px;
+}
+
+@media screen and (max-width: 1441px) {
+    .trailers {
+        max-width: 1170px;
+    }
+
+    .video__item:last-child {
+        display: none;
+    }
+
+    .video-item__video-img {
+        width: 370px;
+        height: 211px;
+    }
 }
 
 /* секция видео */
