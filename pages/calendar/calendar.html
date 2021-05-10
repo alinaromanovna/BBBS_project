@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../calendar/calendar.css">
+    <link rel="stylesheet" href="../../vendor/normalize.css">
+    <link rel="stylesheet" href="../../index-style.css">
+    <link rel="stylesheet" href="../../pages/calendar/calendar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BBBS</title>
 </head>
 
 <body class="page">
-    <header class="header">
-    
-        <ul class="header__menu-links">
-          <li><a class="header__menu-title">наставники.про</a></li>
-          <li><a class="header__menu-link header__menu-link_type_hide" href="#" target="_self">Календарь</a></li>
-          <li><a class="header__menu-link header__menu-link_type_hide" href="#" target="_self">куда пойти</a></li>
-          <li><a class="header__menu-link header__menu-link_type_hide" href="#" target="_self">вопросы</a></li>
-          <li><a class="header__menu-link header__menu-link_hover header__menu-link_type_hide" href="#" target="_self">читать и смотреть</a></li>
-          <li><a class="header__menu-link header__menu-link_type_hide" href="#" target="_self">права детей</a></li>
-          <li><a class="header__menu-link header__menu-link_type_hide" href="#" target="_self">Истории</a></li>
-          <ul class="header__order">
-          <li><a class="header__link-search"><img class="header__menu-search" src="../../images/menu-search-sign2.svg"></a></li>
-          <li><a class="header__link-profile header__menu-link_type_hide"><img class="header__menu-profile" src="../../images/menu-profile-sign.svg"></a></li>
-          </ul>
-          <li><a class="header__link-burger header__link-burge_type_hide"><img class="header__menu-burger" src="../../images/menu_burger.svg"></a></li>
-        </ul>
-    </header>
+  <header class="header">
+    <div class="header__wraper">
+      <h3 class="header__title">наставники.про</h3>
+      <ul class="header__menu-links">
+        <li><a class="header__menu-link" href="#" target="_self">Календарь</a></li>
+        <li><a class="header__menu-link" href="#" target="_self">куда пойти</a></li>
+        <li><a class="header__menu-link" href="#" target="_self">вопросы</a></li>
+        <li><a class="header__menu-link header__menu-link_hover" href="#" target="_self">читать и смотреть</a></li>
+        <li><a class="header__menu-link" href="#" target="_self">права детей</a></li>
+        <li><a class="header__menu-link" href="#" target="_self">Истории</a></li>
+      </ul>
+      <div class="header__box-menu">
+          <a><img class="header__menu-search" src="../../images/menu-search-sign.svg"></a>
+          <img class="header__menu-line" src="../../images/menu-line-sign.svg">
+          <a><img class="header__menu-profile" src="../../images/menu-profile-sign.svg"></a>
+      </div>
+    </div>
+  </header>
 
-    <main class="calendar">
-        <h1 class="calendar__title">Календарь</h1>
-        <div class="calendar__buttons">
-            <button class="calendar__button calendar__button_type_active">Декабрь</button>
-            <button class="calendar__button">Январь</button>
+    <main class="frame-container frame-container_type_calendar">
+        <h1 class="frame-container__title frame-container__title_type_calendar">Календарь</h1>
+        <div class="frame-container__buttons frame-container__buttons_type_calendar">
+            <button class="frame-container__button frame-container__button_type_calendar frame-container__button_type_active">Декабрь</button>
+            <button class="frame-container__button frame-container__button_type_calendar">Январь</button>
         </div>
         <section class="calendar-grid">
           <div class="calendar-grid__item">
@@ -53,7 +56,7 @@
                   <button class="calendar-grid__button-save">Записаться</button>
                   <p class="calendar-grid__left-items">Осталось <span>5</span> мест</p>
                   </div>
-                  <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg"></button>
+                  <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg" alt=""></button>
               </div>
 
           </div>
@@ -76,7 +79,7 @@
                 <button class="calendar-grid__button-save calendar-grid__button-save_type_active">Записаться</button>
                 <p class="calendar-grid__left-items">Запись закрыта</p>
                 </div>
-                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg"></button>
+                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg" alt=""></button>
             </div>
 
         </div>
@@ -99,7 +102,7 @@
                 <button class="calendar-grid__button-save">Записаться</button>
                 <p class="calendar-grid__left-items">Осталось <span>5</span> мест</p>
                 </div>
-                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg"></button>
+                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg" alt=""></button>
             </div>
 
         </div>
@@ -122,7 +125,7 @@
                 <button class="calendar-grid__button-save">Записаться</button>
                 <p class="calendar-grid__left-items">Осталось <span>5</span> мест</p>
                 </div>
-                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg"></button>
+                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg" alt=""></button>
             </div>
 
         </div>
@@ -145,7 +148,7 @@
                 <button class="calendar-grid__button-save">Записаться</button>
                 <p class="calendar-grid__left-items">Осталось <span>5</span> мест</p>
                 </div>
-                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg"></button>
+                <button class="calendar-grid__button-more"><img class="calendar-grid__button-img" src="../../images/calendar_button.svg" alt=""></button>
             </div>
         </div>
         </section>
@@ -208,6 +211,8 @@
       </div>
     </footer>
 
+
+    <!--Попапы / добавить popup_type_opened чтобы открыть-->
     <article class="popup popup_type_register">
       <div class="popup__container">
          <button type="button" class="popup__button popup__button_type_close" aria-label="close"></button>
@@ -234,14 +239,14 @@
       </div>
     </article>
 
-    <article class="popup popup_type_confirmed ">
+    <article class="popup popup_type_confirmed">
       <div class="popup__container popup__container_type_confirmed">
          <button type="button" class="popup__button popup__button_type_close" aria-label="close"></button>
          <p class="calendar__text">Подтвердить запись на мероприятие 
            «Субботний meet up: учимся проходить интервью» 
            5 декабря с 12:00–14:00</p>
           <div class="popup__buttons">
-              <button class="calendar-grid__button-save">Подтвердить запись</button>
+              <button class="calendar-grid__button-save calendar-grid__button-save_type_confirmed">Подтвердить запись</button>
               <button class="calendar__button">Отменить</button>
       </div>
     </article>
@@ -249,7 +254,7 @@
     <article class="popup popup_type_done">
       <div class="popup__container popup__container_type_confirmed">
          <button type="button" class="popup__button popup__button_type_close" aria-label="close"></button>
-         <img class="popup_calendar__img" src="../../images/popup_calendar_type_done-img.svg">
+         <img class="popup_calendar__img" src="../../images/popup_calendar_type_done-img.svg" alt="">
          <p class="calendar__text">Вы записаны на мероприятие 
           «Субботний meet up: учимся проходить интервью»
           5 декабря с 12:00–14:00.
