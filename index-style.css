@@ -1,3 +1,15 @@
+.page__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 80px;
+}
+.main-conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 80px;
+}
 /* Хедер */
 .header {
     background-color: #F3F2F2;
@@ -157,7 +169,11 @@
     }
   }
 .frame-container__buttons {
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 15px;
+    margin-top: 40px;
 }
 .frame-container__buttons-list {
     display: flex;
@@ -165,7 +181,8 @@
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin-top: 40px;
+    margin: 0;
+    
 
 }
 
@@ -243,17 +260,23 @@
 }
 
 .frame__text {
-font-family: PT Root UI;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 13px;
-text-align: center;
-letter-spacing: 1px;
-text-transform: uppercase;
-margin: 0;
-color: #464646;
+    font-family: PT Root UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #464646;
 } 
+
+.frame__choice {
+    position: absolute;
+    top: 15px;
+    left: 220px;
+}
 
 .text-container {
     max-width: 100%;
@@ -342,6 +365,24 @@ color: #464646;
     
 }
 
+.card {
+    height: 224px;
+}
+
+.card_color_green {
+    background-color: #8CDD94;
+}
+
+.card_color_yellow {
+    background-color: #F8D162;
+}
+
+.card_color_pink {
+    background-color: #FF8585;
+}
+.card_color_blue {
+    background-color: #C8D1FF;;
+}
 /* Описание куда пойти */
 
 .description-where-is-going {
@@ -575,8 +616,7 @@ color: #464646;
     border-radius: 15px;
     margin-bottom: 15px;
     object-fit: cover;
-    max-width: 810px;
-    max-height: 394px;  
+    width: 100%; 
 
 }
 
@@ -644,7 +684,8 @@ color: #464646;
 
 .footer {
     background-color: #2E2468;
-    margin-top: 120px;
+    /* Специально сделала не 120px, чтобы использовать grid полностью к стр с gap = 80px */
+    margin-top: 40px; 
     
 }
 

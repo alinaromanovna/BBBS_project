@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../index-style.css">
+    <link rel="stylesheet" href="./where-is-going.css">
+    <title>where-is-going</title>
+</head>
+<body class="page">
+    <div class="popup popup-where-is-going">
+        <div class="popup__container popup-where-is-going__container">
+            <p class="popup--where-is-going__text">Если вы были в интересном месте и хотите порекомендовать его другим наставникам – заполните форму, и мы добавим вашу рекомендацию.</p>
+            <form class= "form form-where-is-going" method="GET">
+                <div class="form-where-is-going__container">
+                <input class="form-where-is-going__input form-where-is-going__input_type_name" type="text" name="Название" placeholder="Название" required>
+                <input class="form-where-is-going__input form-where-is-going__input_type_link" type="url" name="Сайт" placeholder="Сайт" required>
+                </div>
+                <input class="form-where-is-going__input form-where-is-going__input_type_address" type="text" name="Адрес" placeholder="Адрес" required>
+                <div class="form-where-is-going__container">
+                <div class="input-container">
+                <input class="form-where-is-going__input form-where-is-going__input_type_gender" id="boy" type="radio" value="Мальчик" name="Пол"  required>
+                <label for="boy">Мальчик</label>
+                </div>
+                <div class="input-container">
+                <input class="form-where-is-going__input form-where-is-going__input_type_gender" id="girl" type="radio" value="Девочка" name="Пол"  required>
+                <label for="girl">Девочка</label>
+                </div>
+                <input class="form-where-is-going__input form-where-is-going__input_type_age" type="number" name="Возраст" placeholder="Возраст" required>
+                </div>
+                <input class="form-where-is-going__input form-where-is-going__input_type_type-of-relax" type="text" list="type-of-relax" name="Отдых" placeholder="Тип отдыха">
+                <datalist id="type-of-relax">
+                    <option value="Активный"></option>
+                    <option value="Развлекательный"></option>
+                    <option value="Познавательный"></option>
+                </datalist>
+                <textarea class="form-where-is-going__textarea" name="" id="" placeholder="Комментарий* Поделитесь впечатлениями о проведенном времени"></textarea>
+                <div class="form-where-is-going__container">
+                <div class="sign-container">
+                <button id="button-add" class="form-where-is-going__add-button"></button>
+                <label for="button-add">Добавить фото</label>
+                </div>
+                <button class="form-where-is-going__save-button" type="submit">Отправить</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="page__container">
+    <header class="header">
+        <div class="header__wraper">
+          <h3 class="header__title">наставники.про</h3>
+          <ul class="header__menu-links">
+            <li><a class="header__menu-link" href="#" target="_self">Календарь</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">куда пойти</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">вопросы</a></li>
+            <li><a class="header__menu-link header__menu-link_hover" href="#" target="_self">читать и смотреть</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">права детей</a></li>
+            <li><a class="header__menu-link" href="#" target="_self">Истории</a></li>
+          </ul>
+          <div class="header__box-menu">
+              <a><img class="header__menu-search" src="../../images/menu-search-sign.svg"></a>
+              <img class="header__menu-line" src="../../images/menu-line-sign.svg">
+              <a><img class="header__menu-profile" src="../../images/menu-profile-sign.svg"></a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-conteiner">
+          <section>
+            <div class="frame-container where-is-going">
+                <h1 class="frame-container__title">Куда пойти</h1>
+                <div class="frame-container__buttons where-is-going__buttoms">
+                <ul class="frame-container__buttons-list where-is-going__frame_type_place">
+                    <li><button class="frame-container__button frame-container__button_type_active">Все</button></li>
+                    <li><button class="frame-container__button">Выбор наставников</button></li>
+                    <li><button class="frame-container__button">Музеи</button></li>
+                    <li><button class="frame-container__button">Парки</button></li>
+                    <li><button class="frame-container__button">Театры</button></li>
+                    <li><button class="frame-container__button">Спорт</button></li>
+                    <li><button class="frame-container__button">Экскурсии</button></li>
+                    <li><button class="frame-container__button">Секции</button></li>
+                </ul>
+                  <ul class="frame-container__buttons-list where-is-going__frame_type_age">
+                    <li><button class="frame-container__button">8–10 лет</button></li>
+                    <li><button class="frame-container__button">11–13 лет</button></li>
+                    <li><button class="frame-container__button">14–18 лет</button></li>
+                    <li><button class="frame-container__button">18+ лет</button></li>
+                </ul>
+                </div>
+            </div>
+            </section>
+            <section>
+            <div class ="article-where-is-going-container">
+              <article class="article-foto">
+                <div class="item-container article-where-is-going-foto article-foto__container">
+                    <div class="frame"><p class="frame__text">выбор наставника</p></div>
+                    <div class="text-container article-where-is-going-foto__text-container article-foto__text-container">
+                    <h2 class="text-container__title">Сплав на байдарках в две строки</h2>
+                    <p class="text-container__subtitle">усадьба Архангельское в две строки</p>
+                    </div>
+                    <img class="article-where-is-going-foto__img article-foto__img" src="../../images/where-is-going-foto.png" alt="подруги на пляже">
+                    <a href="#" class="link article-where-is-going-foto__link" target="_blank">читать на сайте</a>    
+                </div>
+              </article>
+              <article class="article-description">
+                <div class="item-container description-where-is-going article-description__container">
+                    <p class=" description-where-is-going__subtitle article-description__subtitle">Девочка, 10 лет. Познавательный</p>
+                    <div class="text-container description-where-is-going__container article-description__text-container"> <!-- Не понятно нужен ли скролл для двух описаний или это одно описание-->
+                    <p class="text-container__text description-where-is-going__text article-description__text">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
+                        Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>
+                    <p class="text-container__text description-where-is-going__text article-description__text">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
+                        Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>
+                    </div>
+                </div>
+              </article>
+            </div>
+
+            </section>
+
+            <section>
+
+            <div class="article-where-is-going-container where-is-going-container__grid">
+                <ul class="place__list">
+                <li class="place__list-item">
+                <div class="item-container article-where-is-going article-where-is-going__container  card card_color_green  ">
+                    <div class="frame frame__choice"><p class="frame__text">выбор наставника</p></div>
+                    <div class="text-container">
+                    <h2 class="text-container__title">Название места несколько слов</h2>
+                    <p class="text-container__subtitle text-container__subtitle_type_short-address">Адрес места в одну строку</p>
+                    </div>
+                    <a href="#" class="link article-where-is-going__link" target="_blank">перейти на сайт</a>    
+                </div>
+                <div class="item-container  description-where-is-going description-where-is-going__box ">
+                    <div class="text-container description-where-is-going__container">
+                    <p class="text-container__text description-where-is-going__text">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
+                        Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>
+                    <p class="text-container__subtitle description-where-is-going__subtitle">Девочка, 10 лет. Познавательный</p>
+                    </div>
+                </div>
+                </li>
+                <li class="place__list-item">
+                    <div class="item-container article-where-is-going article-where-is-going__container card card_color_yellow">
+                        <div class="text-container">
+                        <h2 class="text-container__title">Название места</h2>
+                        <p class="text-container__subtitle text-container__subtitle_type_long-address">Длинный адрес места в несколько строк, длинный адрес места.</p>
+                        </div>
+                        <a href="#" class="link article-where-is-going__link" target="_blank">перейти на сайт</a>    
+                    </div>
+                    <div class="item-container description-where-is-going description-where-is-going__box">
+                        <div class="text-container description-where-is-going__container">
+                        <p class="text-container__text description-where-is-going__text description-where-is-going__text_no-sign">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
+                            Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>
+                        </div>
+                    </li>
+                    <li class="place__list-item">
+                        <div class="item-container article-where-is-going article-where-is-going__container  card card_color_pink">
+                            <div class="frame frame__choice"><p class="frame__text">выбор наставника</p></div>
+                            <div class="text-container">
+                            <h2 class="text-container__title">Название места несколько слов</h2>
+                            <p class="text-container__subtitle text-container__subtitle_type_short-address">Адрес места в одну строку</p>
+                            </div>  
+                        </div>
+                        <div class="item-container description-where-is-going description-where-is-going__box">
+                            <div class="text-container description-where-is-going__container">
+                            <p class="text-container__text description-where-is-going__text">Аннотация книги в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. 
+                                Аннотация статьи в несколько абзацев. Аннотация статьи в несколько абзацев. В тот момент, как ребёнок научился говорить, и не одно слово, а задавать бесконечное количество вопросов, жизнь меняется. Вы будете не понимать друг друга, потом понимать чуть лучше и, в конце концов, научитесь даже шутить. Аннотация статьи в несколько абзацев. </p>
+                            <p class="text-container__subtitle description-where-is-going__subtitle ">Девочка, 10 лет. Познавательный</p>
+                            </div>
+                        </li>
+                </ul>
+            
+            </div>
+        </section>
+    </main>
+
+      <footer class="footer">
+        <div class="footer__wraper">
+          <div class="footer__element">
+              <div class="footer__wraper-logo">
+                  <img class="footer__logo-img" src="../../images/logo_bbbs.svg">
+                  <button class="button footer__button-help">Помочь деньгами</button>
+              </div>
+              <p class="footer__copyright">&copy; Старшие Братья Старшие Сестры</p>
+              <div class="footer__copyright-by">
+                  <p class="footer__text">Разработка – студенты <span class="footer__text_type_span">Яндекс.Практикум</span></p>
+                  <p class="footer__text">Концепия и дизайн – <span class="footer__text_type_span">krkr.design</span></p>
+              </div>
+          </div>
+          <nav>
+            <ul class="footer__links">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">о проекте</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">Календарь</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">куда пойти</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">вопросы</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Расписание">читать и смотреть</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Календарь">права детей</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Путешествия">Истории</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="footer__links">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Погода">Facebook</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Расписание">VKontakte</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Календарь">Instagram</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#" target="_blank" title="Путешествия">Уoutube</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      </div>
+</body>
+</html>
+
